@@ -2,6 +2,20 @@ import { Routes, Route } from "react-router-dom";
 import Button from "./Button";
 import Screen from "./Screen";
 import "./styles.css";
+import screen1 from "../public/screen-1.png";
+import screen2 from "../public/screen-2.png";
+import screen3 from "../public/screen-3.png";
+import screen4 from "../public/screen-4.png";
+import screen5 from "../public/screen-5.png";
+import screen6 from "../public/screen-6.png";
+import screen7 from "../public/screen-7.png";
+import screen8 from "../public/screen-8.png";
+import screen9 from "../public/screen-9.png";
+import screen10 from "../public/screen-10.png";
+import screen11 from "../public/screen-11.png";
+import screen12 from "../public/screen-12.png";
+import screen13 from "../public/screen-13.png";
+import screen14 from "../public/screen-14.png";
 
 /* Change debug to `true` to see the invisible Buttons */
 export const debug = false;
@@ -37,86 +51,119 @@ export default function App() {
         <Route
           path="/"
           element={
-            <Screen image="/intro-1.png">
-              <Button to="/intro-1" x="600" y="300" w="40" h="30" />
+            <Screen image={screen1}>
+              <Button to="/screen2" x="530" y="500" w="140" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-1"
+          path="/screen2"
           element={
-            <Screen image="/intro-2.png">
-              <Button to="/intro-2" x="600" y="300" w="40" h="30" />
+            <Screen image={screen2}>
+              <Button to="/screen3" x="530" y="500" w="140" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-2"
+          path="/screen3"
           element={
-            <Screen image="/frame-1.png">
-              <Button to="/intro-3" x="245" y="210" w="200" h="30" />
-              <Button to="/intro-4" x="245" y="295" w="250" h="30" />
+            <Screen image={screen3}>
+              <Button to="/screen4" x="530" y="500" w="140" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-3"
+          path="/screen4"
           element={
-            <Screen image="/frame-2.png">
-              <Button to="/intro-4" x="450" y="210" w="50" h="30" />
-              <Button to="/intro-4" x="245" y="295" w="250" h="30" />
+            <Screen image={screen4}>
+              <Button to="/screen5" x="530" y="500" w="140" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-4"
+          path="/screen5"
           element={
-            <Screen image="/frame-3.png">
-              <Button to="/intro-5" x="600" y="125" w="80" h="30" />
+            <Screen image={screen5}>
+              <Button to="/screen6" x="355" y="350" w="118" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-5"
+          path="/screen6"
           element={
-            <Screen image="/frame-4.png">
-              <Button to="/intro-6" x="455" y="50" w="60" h="25" />
-              <Button to="/intro-6" x="250" y="190" w="120" h="30" />
-              <Button to="/intro-2" x="380" y="190" w="90" h="30" />
+            <Screen image={screen6}>
+              <Button to="/screen7" x="355" y="350" w="118" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-6"
+          path="/screen7"
           element={
-            <Screen image="/frame-5.png">
-              <Button to="/intro-7" x="455" y="50" w="60" h="25" />
+            <Screen image={screen7}>
+              <Button to="/screen8" x="578" y="212" w="163" h="40" />
+              <Button to="/screen5" x="508" y="72" w="393" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-7"
+          path="/screen8"
           element={
-            <Screen image="/frame-6.png">
-              <Button to="/intro-8" x="600" y="125" w="80" h="30" />
+            <Screen image={screen8}>
+              <Button to="/screen9" x="680" y="178" w="117" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-8"
+          path="/screen9"
           element={
-            <Screen image="/frame-7.png">
-              <Button to="/intro-9" x="455" y="50" w="60" h="25" />
-              <Button to="/intro-9" x="250" y="190" w="120" h="30" />
-              <Button to="/intro-2" x="380" y="190" w="90" h="30" />
+            <Screen image={screen9}>
+              <Button to="/screen10" x="680" y="178" w="117" h="40" />
             </Screen>
           }
         />
         <Route
-          path="/intro-9"
+          path="/screen10"
           element={
-            <Screen image="/frame-8.png">
-              <Button to="/intro-5" x="150" y="430" w="330" h="90" />
+            <Screen image={screen10}>
+              <Button to="/screen11" x="578" y="212" w="163" h="40" />
+            </Screen>
+          }
+        />
+
+        <Route
+          path="/screen11"
+          element={
+            <Screen image={screen11}>
+              <Button to="/screen12" x="1099" y="57" w="37" h="37" />
+              <Button to="/screen12" x="948" y="508" w="186" h="40" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/screen12"
+          element={
+            <Screen image={screen12}>
+              <Button to="/screen13" x="141" y="273" w="243" h="61" />
+              <Button to="/screen13" x="607" y="289" w="80" h="40" />
+              <Button to="/screen14" x="370" y="508" w="280" h="40" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/screen13"
+          element={
+            <Screen image={screen13}>
+              <Button to="/screen12" x="629" y="508" w="285" h="40" />
+              <Button to="/screen12" x="941" y="508" w="186" h="40" />
+              <Button to="/screen12" x="1099" y="57" w="37" h="37" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/screen14"
+          element={
+            <Screen image={screen14}>
+              <Button to="/screen12" x="1099" y="57" w="37" h="37" />
             </Screen>
           }
         />
